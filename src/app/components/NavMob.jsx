@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from 'react'
 // Add this style to your css file
 
 
-export default () => {
+const  NavMob = () => {
 
   const [state, setState] = useState(false)
   const navRef = useRef()
@@ -111,3 +111,6 @@ export default () => {
       </div>
   )
 }
+
+
+export default NavMob;
