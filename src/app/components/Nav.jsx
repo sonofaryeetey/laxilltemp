@@ -30,7 +30,7 @@ const Nav = () => {
           /></Link>
         <div className="nav-links">
           <Link href="/">Home</Link>
-          <Link href="#">About</Link>
+          <Link href="/About-us">About</Link>
           <Link href="#">Services</Link>
           <Link href="#">Products</Link>
           <Link href="#">Works</Link>

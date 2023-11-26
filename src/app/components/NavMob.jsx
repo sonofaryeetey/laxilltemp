@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
 
 
@@ -14,8 +15,8 @@ const  NavMob = () => {
 
   // Replace javascript:void(0) path with your path
   const navigation = [
-      { title: "Home", path: "javascript:void(0)" },
-      { title: "About", path: "javascript:void(0)" },
+      { title: "Home", path: "/" },
+      { title: "About", path: "/About-us" },
       { title: "Services", path: "javascript:void(0)" },
       { title: "Products", path: "javascript:void(0)" },
       { title: "Works", path: "javascript:void(0)" },
@@ -45,23 +46,23 @@ const  NavMob = () => {
       <div ref={navRef} className="bg-white w-full top-0 z-20 nav-mob">
           <div className="items-center nav-mob-inner px-4 max-w-screen-xl mx-auto md:px-8 lg:flex">
               <div className="flex  items-center justify-between py-3 lg:py-4 lg:block">
-                    <a href="javascript:void(0)">
+                    <Link href="javascript:void(0)">
                         <Image
                             src="/Images/laxill-logo.png" 
                             width={50} 
                             height={50}
                             alt="Laxill-logo"
                         />
-                    </a>
+                    </Link>
                   <div className="lg:hidden">
                       <button className="text-gray-700 outline-none p-2 rounded-md focus:border-gray-400 focus:border"
                           onClick={() => setState(!state)}
                       >
                           {
                               state ? (
-                                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-                                      <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
-                                  </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                            </svg>
                               ) : (
                                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8h16M4 16h16" />
@@ -75,19 +76,19 @@ const  NavMob = () => {
                     <div>
                         <ul className="flex flex-col-reverse space-x-0 lg:space-x-6 lg:flex-row mt-10">
                             {/* <li className="mt-8 mb-8 lg:mt-0 lg:mb-0">
-                                <a href="javascript:void(0)" className="text-gray-600 hover:text-indigo-600">
+                                <<Link href="javascript:void(0)" className="text-gray-600 hover:text-indigo-600">
                                     Contact
-                                </a>
+                                </Link>
                             </li> */}
                             {/* <li className="mt-4 lg:mt-0">
-                                <a href="javascript:void(0)" className="py-3 px-4 text-center border text-gray-600 hover:text-indigo-600 rounded-md block lg:inline lg:border-0">
+                                <<Link href="javascript:void(0)" className="py-3 px-4 text-center border text-gray-600 hover:text-indigo-600 rounded-md block lg:inline lg:border-0">
                                     Login
-                                </a>
+                                </Link>
                             </li>
                             <li className="mt-8 lg:mt-0">
-                                <a href="javascript:void(0)" className="py-3 px-4 text-center text-white bg-indigo-600 hover:bg-indigo-700 rounded-md shadow block lg:inline">
+                                <<Link href="javascript:void(0)" className="py-3 px-4 text-center text-white bg-indigo-600 hover:bg-indigo-700 rounded-md shadow block lg:inline">
                                     Sign Up
-                                </a>
+                                </Link>
                             </li> */}
                         </ul>
                     </div>
@@ -97,9 +98,9 @@ const  NavMob = () => {
                                 navigation.map((item, idx) => {
                                     return (
                                         <li key={idx} className=" text-xl text-gray-600 hover:text-indigo-600">
-                                            <a href={item.path}>
+                                            <Link href={item.path}>
                                                 { item.title }
-                                            </a>
+                                            </Link>
                                         </li>
                                     )
                                 })
