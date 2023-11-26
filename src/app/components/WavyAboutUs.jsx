@@ -32,7 +32,7 @@ const WavyHero = () => {
           /> */}
         </h2>
         <p className="text-2xl text-white  font-extrabold mx-auto md:text-3xl">
-                        "dedicated in helping Businesses harness  <span className=" span text-transparent bg-clip-text bg-gradient-to-r from-[#4F46E5] to-[#E114E5]"> the Power of Data</span>"
+        &quot;dedicated in helping Businesses harness  <span className=" span text-transparent bg-clip-text bg-gradient-to-r from-[#4F46E5] to-[#E114E5]"> the Power of Data</span>&quot;
                     </p>
         <button className='px-11 text-white font-semi-bold py-4 rounded-full mr-4 mt-10 bg-gradient-to-br from-red-500 via-red-400 to-pink-500 hover:bg-slate-800'>Get Started</button>
       </div>
