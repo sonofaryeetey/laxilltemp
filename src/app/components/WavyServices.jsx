@@ -3,13 +3,13 @@
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation';
 import WavesSvg from "./WavesSvg"
-// import HeroBg from "../../../public/Images/Servicesbg2.jpg";
+import HeroBg from "../../../public/Images/Servicesbgnew.jpg";
 import Image from 'next/image';
 
 
 const WavyHero = () => {
   return (
-    <section className=" hero " style={{ backgroundImage: `url(${""})` }}>
+    <section className=" hero " style={{ backgroundImage: `url(${HeroBg.src})` }}>
       <div className="heroShade"></div>
       <div className="container z-index-5 ">
         <div className=' content-wrapper'>
