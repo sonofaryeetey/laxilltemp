@@ -17,7 +17,7 @@ const  NavMob = () => {
   const navigation = [
       { title: "Home", path: "/" },
       { title: "About", path: "/About-us" },
-      { title: "Services", path: "javascript:void(0)" },
+      { title: "Services", path: "/Services" },
       { title: "Products", path: "javascript:void(0)" },
       { title: "Works", path: "javascript:void(0)" },
       { title: "Contact", path: "javascript:void(0)" }
