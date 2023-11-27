@@ -3,7 +3,7 @@
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation';
 import WavesSvg from "./WavesSvg"
-import HeroBg from "../../../public/Images/Servicesbg.jpg";
+import HeroBg from "../../../public/Images/Servicesbg2.jpg";
 import Image from 'next/image';
 
 
