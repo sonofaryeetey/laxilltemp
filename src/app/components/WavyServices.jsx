@@ -48,6 +48,7 @@ const WavyHero = () => {
               height={500}
               alt="floatingman"
               className='floating-longer'
+              
             />
           </div>
         </div>

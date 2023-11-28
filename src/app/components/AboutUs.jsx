@@ -1,24 +1,25 @@
 import React from 'react'
 import Image from 'next/image'
 
-const AboutUs = () => {
+const AboutUs = ({Data}) => {
+  console.log({Data})
   return (
     <div className="about-wrapper">
         <div className="home about-us">
         <div className='about-text'>
-        <h2 className='font-bold'>What we do</h2>
+        <h2 className='font-bold'>{Data.heading}</h2>
         <div class="divider">
             <div class="one gradient"></div>
             <div class="two gradient"></div>
         </div>
-        <p className=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto animi eligendi iste magnam deleniti possimus unde id adipisci, soluta alias ad voluptate quam. Hic atque voluptates cupiditate non! Ab, perspiciatis?
-        Laboriosam, minus quasi, labore maiores excepturi eligendi quo, sed exercitationem nemo nihil nostrum. Ea veritatis nulla temporibus ut nemo, labore quibusdam doloremque dolorum veniam dolores. Doloribus libero voluptas debitis ea!</p>
+        <p className=''>Our team of experienced data scientists, analysts, and engineers are committed to delivering innovative solutions that empower your organization. With a track record of success, we've helped numerous companies across various industries leverage their data for competitive advantage.
+</p>
         <button className='px-11 text-white font-semi-bold py-3 rounded-full mr-4 mt-10 gradient-button '>See more</button>
         </div>
 
         <div className='about-image'>
-            <Image src={"/Images/laxill-rep.png"}
-            className='floating'
+            <Image src={Data.imgSrc}
+            className={Data.className}
             alt='logo'
             width={700}
             height={700}/>
